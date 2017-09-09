@@ -22,7 +22,7 @@ Y=Y.split(',')
 DistCX=abs(int(X[0])-int(C[0]))+abs(int(X[1])-int(C[1]))
 DistCY=abs(int(Y[0])-int(C[0]))+abs(int(Y[1])-int(C[1]))
 if DistCX<2*DistAB and DistCY<2*DistAB:
-    if DistCX<DistCY:
+    if DistCX<=DistCY:
         print("Pick up 1\n")
     elif DistCY<DistCX:
         print("pick up 2\n")
